@@ -11,7 +11,7 @@
 // is not being calculated correctly
 
 int main() {
-	std::fstream inputFile("./input.txt", std::ios::in);
+	std::fstream inputFile("./testinput.txt", std::ios::in);
 	if(inputFile.is_open()) {
 		std::cout << "file open\n";
 	}
@@ -52,8 +52,10 @@ int main() {
 		} else if(num < 0) {
 			num = num + 100;
 			if(lastNum != 0) {
-				std::cout << "wrapped, no zero added" << '\n';
+				std::cout << "wrapped" << '\n';
 				password++;
+			} else {
+				std::cout << "wrapped, no zero added" << '\n';
 			}
 		}
 
