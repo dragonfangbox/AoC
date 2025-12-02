@@ -1,7 +1,7 @@
 CC=g++
 
 compile:
-	$(CC) -o main main.cpp
+	$(CC) -Wall -o main main.cpp
 
 run:
 	./main
